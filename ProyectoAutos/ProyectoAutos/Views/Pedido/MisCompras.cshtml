@@ -1,0 +1,37 @@
+﻿@model IEnumerable<ProyectoAutos.Models.Pedido>
+
+@{
+    ViewBag.Title = "MisCompras";
+}
+
+<h2>MisCompras</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.auto.nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.usuario.nombre)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    if (item.idUsuario.Equals(@Session["IdUsuario"])) { 
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.auto.nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.usuario.nombre)
+        </td>
+
+    </tr>
+    }
+else { <tr>No se encuentran los datos de su compra</tr>}
+}
+
+</table>
+
+

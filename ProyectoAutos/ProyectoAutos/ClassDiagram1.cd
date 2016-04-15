@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ProyectoAutos.RouteConfig" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Start\RouteConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProyectoAutos.MvcApplication" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Global.asax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProyectoAutos.Controllers.AdminController" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAGARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\AdminController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProyectoAutos.Controllers.ArchivoController" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\ArchivoController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProyectoAutos.Controllers.CuentaController" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAEAAAAAAAAQAAAAAAAAAAIAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Controllers\CuentaController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProyectoAutos.Controllers.HomeController" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\HomeController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProyectoAutos.Controllers.UsuarioController" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACARAACAAAAAAAAAAAEAAEACAAEAAAAAAAA=</HashCode>
+      <FileName>Controllers\UsuarioController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProyectoAutos.Migrations.DB_AUTOS" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAMAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAI=</HashCode>
+      <FileName>Migrations\201604071938503_DB_AUTOS.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ProyectoAutos.Migrations.Configuration" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Migrations\Configuration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProyectoAutos.Models.Archivo" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAABAAAAAAAAACAIAAAAAAAAAAAQAAAIAAQAAAAAAA=</HashCode>
+      <FileName>Models\Archivo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProyectoAutos.Models.Autos" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAQAQAACCAAAAAAAAAAAAEAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Models\Autos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProyectoAutos.Models.DB_AUTOS" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAACAAAAAAACAAAAAAQAIAAAAAAAAAA=</HashCode>
+      <FileName>Models\DB_AUTOS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProyectoAutos.Models.Pedido" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAQAEAACAAAAAAAAAAAAAAAQAIAAAAAAAAAA=</HashCode>
+      <FileName>Models\Pedido.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProyectoAutos.Models.Rol" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAACAAAEAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Rol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProyectoAutos.Models.Usuario" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAARAEAACEAAAAAAACAAAAAACAAAAAAAAAAQA=</HashCode>
+      <FileName>Models\Usuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ProyectoAutos.Models.FyleType" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACQAAABAAAAAAAAAAECA=</HashCode>
+      <FileName>Models\FyleType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

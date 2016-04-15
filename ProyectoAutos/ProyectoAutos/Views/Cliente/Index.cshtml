@@ -1,0 +1,56 @@
+﻿@model IEnumerable<ProyectoAutos.Models.Autos>
+
+@{
+    ViewBag.Title = "Compre Su Carro(:";
+}
+
+<div class="page-header">
+    <h1>Los mejores automóviles para <small>@Session["nombreUsuario"]</small></h1>
+</div>
+
+@if (Session["idUsuario"] != null) {
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">@Html.DisplayFor(modelItem => item.nombre)</div>
+
+                <div class="panel-body">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                @if (item.archivo.Any(a => a.tipo == ProyectoAutos.Models.FyleType.Imagen))
+                                {
+                                    
+                                   <a class="thumbnail"> <img  src="~/Archivo/Obtener?id=@item.archivo.First(a => a.tipo == ProyectoAutos.Models.FyleType.Imagen).idArchivo" width="200" /></a>
+                                }
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Marca: </td>
+                            <td>@Html.DisplayFor(modelItem => item.marca)</td>
+                        </tr>
+                        <tr>
+                            <td>Modelo: </td>
+                            <td>@Html.DisplayFor(modelItem => item.modelo)</td>
+                        </tr>
+                        <tr>
+                            <td>Precio: </td>
+                            <td>@Html.DisplayFor(modelItem => item.precio)</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="panel-footer" >
+                    <a href="~/Pedido/Pedido/@item.idAutos">Comprar</a>
+                    @*@Html.ActionLink("Comprar", "Pedido","Pedido", new { id = item.idAutos }) |*@
+                   @* @Html.ActionLink("Details", "Details", new { id = item.idAutos }) |*@
+                   
+                </div>
+            </div>
+        </div>
+    }
+</div>
+}else{
+    <h2>Inicie sesion para continuar</h2>
+}

@@ -1,0 +1,33 @@
+﻿@model ProyectoAutos.Models.Pedido
+
+@{
+    ViewBag.Title = "MisPedidos";
+}
+
+<h2>MisPedidos</h2>
+
+<div>
+    <h4>Pedido</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.auto.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.auto.nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.usuario.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.usuario.nombre)
+        </dd>
+    </dl>
+</div>
+<p>
+   @*/* @Html.ActionLink("Edit", "Edit", new { id = Model.idPedido }) |*@
+    @Html.ActionLink("Ver autos", "Index","Cliente")
+</p>

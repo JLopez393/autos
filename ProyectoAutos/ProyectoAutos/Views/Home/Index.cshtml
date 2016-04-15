@@ -1,0 +1,16 @@
+﻿
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+@if (Session["idUsuario"] != null) {
+     <h2>Bienvenido @Session["nombreUsuario"]</h2>
+    
+    
+}else{
+    <h2>Por favor @Html.ActionLink("inicie Sesión", "Login", "Cuenta") para continuar...</h2>
+}

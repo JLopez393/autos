@@ -1,0 +1,101 @@
+﻿@model ProyectoAutos.Models.Pedido
+
+@{
+    ViewBag.Title = "Nuevo";
+}
+
+<h2>Nuevo</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="row">
+        <div class="col-md-6">
+            <dl class="dl-horizontal">
+                @if(Model.auto.archivo.Any(a => a.tipo == ProyectoAutos.Models.FyleType.Imagen)){
+            <dt>Imagen: </dt>
+            <dd><img src="~/Archivo/Obtener?id=@Model.auto.archivo.First(a => a.tipo == ProyectoAutos.Models.FyleType.Imagen).idArchivo" width="200" /></dd>
+        }
+                <dt>
+                    @Html.DisplayNameFor(model => model.auto.nombre)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.auto.nombre)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.auto.marca)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.auto.marca)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.auto.modelo)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.auto.modelo)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.auto.precio)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.auto.precio)
+                </dd>
+
+            </dl>
+        </div>
+
+        <div class="col-md-6">
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.usuario.nombre)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.usuario.nombre)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.usuario.correo)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.usuario.correo)
+                </dd>
+            </dl>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <table>
+                <tr>
+                    <td width="50%" align="left">TOTAL:</td>
+                    <td width="50%" align="right">@Html.DisplayFor(model => model.auto.precio)</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">
+                        @Html.ActionLink("ORDENAR", "Comprar", "Pedido", new { id = Model.idAutos }, new { @class = "btn btn-success" })
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
